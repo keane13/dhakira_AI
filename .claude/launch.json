@@ -1,0 +1,8 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "dhakira", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 5173 },
+    { "name": "dhakira-api", "runtimeExecutable": "backend/.venv/Scripts/python.exe", "runtimeArgs": ["-m", "uvicorn", "app.main:create_app", "--factory", "--app-dir", "backend", "--port", "8000"], "port": 8000 },
+    { "name": "dhakira-server-mode", "runtimeExecutable": "npx", "runtimeArgs": ["vite", "--mode", "server", "--port", "5174", "--strictPort"], "port": 5174 }
+  ]
+}

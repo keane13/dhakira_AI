@@ -1,0 +1,710 @@
+{
+  "resourceType": "Bundle",
+  "id": "31730ce9-4b99-58fa-b510-937bb4dedddc",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST",
+        "display": "test health data"
+      }
+    ]
+  },
+  "type": "collection",
+  "timestamp": "2026-11-17T09:00:00.000Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/sid/dhakira-fictional-patient",
+            "value": "SYN-107"
+          }
+        ],
+        "name": [
+          {
+            "text": "Noura",
+            "given": [
+              "Noura"
+            ]
+          }
+        ],
+        "gender": "female",
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "ar"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "id": "1c06981b-87fc-5c74-9cf3-095956867072",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ac22b279-6ede-5d44-9801-b80fcb1924aa",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "period": {
+          "start": "2025-04-07",
+          "end": "2025-04-07"
+        },
+        "id": "ac22b279-6ede-5d44-9801-b80fcb1924aa",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a537f326-b1ca-5903-9af9-7040ee3b4e5d",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "period": {
+          "start": "2025-07-07",
+          "end": "2025-07-07"
+        },
+        "id": "a537f326-b1ca-5903-9af9-7040ee3b4e5d",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b8fd37fd-61c9-5118-914d-87cbbe3e9f26",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "period": {
+          "start": "2025-10-06",
+          "end": "2025-10-06"
+        },
+        "id": "b8fd37fd-61c9-5118-914d-87cbbe3e9f26",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ddadf943-510c-53ca-97b9-fc2d846c290c",
+      "resource": {
+        "resourceType": "Encounter",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "period": {
+          "start": "2026-04-06",
+          "end": "2026-04-06"
+        },
+        "id": "ddadf943-510c-53ca-97b9-fc2d846c290c",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:15737011-3d01-5a5e-b3a7-d2276b7c4cc4",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "cognitive-check-total",
+              "display": "Dhakira brief cognitive check, total out of 10"
+            }
+          ],
+          "text": "Brief cognitive check total (0 to 10). Original, unvalidated items."
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ac22b279-6ede-5d44-9801-b80fcb1924aa"
+        },
+        "effectiveDateTime": "2025-04-07",
+        "valueInteger": 6,
+        "method": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "presentation-visual",
+              "display": "Presented by sight"
+            }
+          ],
+          "text": "Form A"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                  "code": "assessment-language",
+                  "display": "Language of the assessment"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "ar"
+                }
+              ]
+            }
+          }
+        ],
+        "id": "15737011-3d01-5a5e-b3a7-d2276b7c4cc4",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:12736b58-3c01-58cb-b4a7-d3ba6e7c517d",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "cognitive-check-total",
+              "display": "Dhakira brief cognitive check, total out of 10"
+            }
+          ],
+          "text": "Brief cognitive check total (0 to 10). Original, unvalidated items."
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "encounter": {
+          "reference": "urn:uuid:a537f326-b1ca-5903-9af9-7040ee3b4e5d"
+        },
+        "effectiveDateTime": "2025-07-07",
+        "valueInteger": 6,
+        "method": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "presentation-visual",
+              "display": "Presented by sight"
+            }
+          ],
+          "text": "Form B"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                  "code": "assessment-language",
+                  "display": "Language of the assessment"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "ar"
+                }
+              ]
+            }
+          }
+        ],
+        "id": "12736b58-3c01-58cb-b4a7-d3ba6e7c517d",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:13736ceb-3b01-5738-b5a7-d54d6d7c4fea",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "cognitive-check-total",
+              "display": "Dhakira brief cognitive check, total out of 10"
+            }
+          ],
+          "text": "Brief cognitive check total (0 to 10). Original, unvalidated items."
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "encounter": {
+          "reference": "urn:uuid:b8fd37fd-61c9-5118-914d-87cbbe3e9f26"
+        },
+        "effectiveDateTime": "2025-10-06",
+        "valueInteger": 6,
+        "method": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "presentation-visual",
+              "display": "Presented by sight"
+            }
+          ],
+          "text": "Form C"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                  "code": "assessment-language",
+                  "display": "Language of the assessment"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "ar"
+                }
+              ]
+            }
+          }
+        ],
+        "id": "13736ceb-3b01-5738-b5a7-d54d6d7c4fea",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:187374ca-4201-523d-aea7-ca48687c480b",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "cognitive-check-total",
+              "display": "Dhakira brief cognitive check, total out of 10"
+            }
+          ],
+          "text": "Brief cognitive check total (0 to 10). Original, unvalidated items."
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "encounter": {
+          "reference": "urn:uuid:ddadf943-510c-53ca-97b9-fc2d846c290c"
+        },
+        "effectiveDateTime": "2026-04-06",
+        "valueInteger": 6,
+        "method": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "presentation-visual",
+              "display": "Presented by sight"
+            }
+          ],
+          "text": "Form A"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                  "code": "assessment-language",
+                  "display": "Language of the assessment"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "ar"
+                }
+              ]
+            }
+          }
+        ],
+        "id": "187374ca-4201-523d-aea7-ca48687c480b",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b8ed8496-f0e9-5387-8795-32b898104671",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "preliminary",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+              "code": "adjusted-change-from-baseline",
+              "display": "Change from own baseline after practice adjustment"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "effectiveDateTime": "2026-04-06",
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "not-performed",
+              "display": "Not Performed"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "No change estimate was reached."
+          }
+        ],
+        "id": "b8ed8496-f0e9-5387-8795-32b898104671",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:336ca704-cb69-515b-8fd4-e60a9e030ed9",
+      "resource": {
+        "resourceType": "Consent",
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+              "code": "patient-privacy",
+              "display": "Privacy Consent"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "59284-0",
+                "display": "Consent Document"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "policy": [
+          {
+            "uri": "http://example.org/fhir/dhakira/policy/research-prototype"
+          }
+        ],
+        "provision": {
+          "type": "permit",
+          "provision": [
+            {
+              "type": "deny",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                      "code": "data-scope-wearable",
+                      "display": "Wearable data"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "deny",
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://example.org/fhir/CodeSystem/dhakira-local",
+                      "code": "data-scope-genomic",
+                      "display": "Genomic results"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "id": "336ca704-cb69-515b-8fd4-e60a9e030ed9",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e01b8eee-449b-5513-b7a1-4888b6623965",
+      "resource": {
+        "resourceType": "Practitioner",
+        "name": [
+          {
+            "text": "Dr Amal (fictional reviewer)"
+          }
+        ],
+        "id": "e01b8eee-449b-5513-b7a1-4888b6623965",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:582e0395-4d1b-5a86-8b29-ef17e0987708",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "status": "draft",
+        "intent": "plan",
+        "code": {
+          "text": "Urgent human handoff"
+        },
+        "subject": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "authoredOn": "2026-11-17",
+        "requester": {
+          "reference": "urn:uuid:e01b8eee-449b-5513-b7a1-4888b6623965"
+        },
+        "reasonCode": [
+          {
+            "text": "Son reports sudden confusion since this morning"
+          }
+        ],
+        "note": [
+          {
+            "text": "Agreed next step: Example plan: urgent human handoff, clarify the selected contributors, and record a 14-day follow-up task. Nothing is booked or sent by this prototype."
+          }
+        ],
+        "id": "582e0395-4d1b-5a86-8b29-ef17e0987708",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ab481799-ee2c-5672-9624-28b39a24d394",
+      "resource": {
+        "resourceType": "Task",
+        "status": "requested",
+        "intent": "plan",
+        "description": "Follow up: Example plan: urgent human handoff, clarify the selected contributors, and record a 14-day follow-up task. Nothing is booked or sent by this prototype.",
+        "for": {
+          "reference": "urn:uuid:1c06981b-87fc-5c74-9cf3-095956867072"
+        },
+        "focus": {
+          "reference": "urn:uuid:582e0395-4d1b-5a86-8b29-ef17e0987708"
+        },
+        "businessStatus": {
+          "text": "open"
+        },
+        "restriction": {
+          "period": {
+            "end": "2026-12-01"
+          }
+        },
+        "id": "ab481799-ee2c-5672-9624-28b39a24d394",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+              "code": "HTEST",
+              "display": "test health data"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

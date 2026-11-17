@@ -1,0 +1,16 @@
+node_modules
+dist
+.env
+.env.local
+.netlify
+*.log
+
+# Python backend
+backend/.venv
+__pycache__
+*.pyc
+.pytest_cache
+*.db
+
+# Local tool settings
+.claude/settings.local.json

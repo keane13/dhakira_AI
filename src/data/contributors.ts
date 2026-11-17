@@ -1,0 +1,98 @@
+import { L, type Contributor, type ContributorId } from '../engine/types';
+
+/**
+ * Prompts a clinician can choose to discuss. "localNote" holds adaptation ideas
+ * for Abu Dhabi. They are design suggestions for co-design, not evidence.
+ */
+export const CONTRIBUTORS: Record<ContributorId, Contributor> = {
+  sleep: {
+    id: 'sleep',
+    label: L('Sleep and recent disruption', 'النوم والاضطراب الأخير'),
+    why: L('Poor or broken sleep can lower task performance and is worth checking before reading a change as lasting.', 'قد يخفض النوم السيئ أو المتقطع الأداء، ويستحق الفحص قبل اعتبار التغيّر دائمًا.'),
+    action: L('Talk through sleep timing and snoring, and ask whether a sleep assessment would help.', 'مناقشة مواعيد النوم والشخير، والسؤال عن فائدة تقييم النوم.'),
+    localNote: L('Ask about shift work and about Ramadan, when sleep timing often moves.', 'السؤال عن العمل بنظام المناوبات وعن شهر رمضان حين تتغيّر مواعيد النوم غالبًا.'),
+    sources: ['S14', 'S5'],
+    service: 'sleep_clinic',
+  },
+  medicines: {
+    id: 'medicines',
+    label: L('Medicine review', 'مراجعة الأدوية'),
+    why: L('Some medicines, including some night-time sleep aids, can affect thinking. This is a reversible cause to rule out.', 'قد تؤثر بعض الأدوية، ومنها بعض المنومات الليلية، في التفكير. وهذا سبب قابل للعكس يجب استبعاده.'),
+    action: L('Reconcile every medicine with a clinician or pharmacist, including anything bought without a prescription. Do not stop a medicine without advice.', 'مطابقة جميع الأدوية مع الطبيب أو الصيدلي، بما فيها ما يُشترى دون وصفة. لا توقف أي دواء دون استشارة.'),
+    localNote: L('Include herbal and traditional remedies, asked about without judgement.', 'تشمل الأعشاب والعلاجات التقليدية، مع السؤال عنها دون إصدار أحكام.'),
+    sources: ['S14'],
+    service: 'primary_care',
+  },
+  mood: {
+    id: 'mood',
+    label: L('Mood and emotional wellbeing', 'المزاج والصحة النفسية'),
+    why: L('Low mood can affect memory and attention, and depression is itself a modifiable risk factor.', 'قد يؤثر تدني المزاج في الذاكرة والانتباه، والاكتئاب نفسه عامل خطر قابل للتعديل.'),
+    action: L('Complete a validated mood screen in the preferred language, and offer mental health support when it is needed.', 'إجراء فحص مزاج معتمد باللغة المفضلة، وتقديم الدعم النفسي عند الحاجة.'),
+    localNote: L('Stigma can limit disclosure. Offer a private conversation and a clinician of the preferred gender where possible.', 'قد تحدّ الوصمة من الإفصاح. يُعرض حديث خاص وطبيب من الجنس المفضل متى أمكن.'),
+    sources: ['S4', 'S14'],
+    service: 'mental_health',
+  },
+  sensory: {
+    id: 'sensory',
+    label: L('Hearing, vision and access', 'السمع والبصر وإمكانية الوصول'),
+    why: L('Untreated hearing or vision loss can look like cognitive change on a task, and both are modifiable risk factors.', 'قد يبدو فقدان السمع أو البصر غير المعالج كتغيّر إدراكي في المهمة، وكلاهما عامل خطر قابل للتعديل.'),
+    action: L('Check hearing and vision, then repeat the task with the right aids in the same presentation mode.', 'فحص السمع والبصر، ثم إعادة المهمة بالوسائل المناسبة وبطريقة العرض نفسها.'),
+    localNote: null,
+    sources: ['S4', 'S5', 'S14'],
+    service: 'audiology',
+  },
+  vascular: {
+    id: 'vascular',
+    label: L('Blood pressure and vascular health', 'ضغط الدم وصحة الأوعية'),
+    why: L('High blood pressure in midlife and later is a modifiable risk factor.', 'ارتفاع ضغط الدم في منتصف العمر وما بعده عامل خطر قابل للتعديل.'),
+    action: L('Review blood pressure and treatment with primary care.', 'مراجعة ضغط الدم والعلاج مع الرعاية الأولية.'),
+    localNote: null,
+    sources: ['S4', 'S5'],
+    service: 'primary_care',
+  },
+  metabolic: {
+    id: 'metabolic',
+    label: L('Diabetes, cholesterol and metabolic results', 'السكري والكوليسترول والنتائج الأيضية'),
+    why: L('Diabetes and high LDL cholesterol are modifiable risk factors, and low B12 or thyroid problems are reversible causes to check.', 'السكري وارتفاع الكوليسترول الضار عاملان قابلان للتعديل، ونقص فيتامين ب12 أو مشاكل الغدة الدرقية أسباب قابلة للعكس يجب فحصها.'),
+    action: L('Review HbA1c, lipids, B12 and thyroid results with primary care.', 'مراجعة السكر التراكمي والدهون وفيتامين ب12 والغدة الدرقية مع الرعاية الأولية.'),
+    localNote: L('Plan food advice around family meals and shared dishes, and plan fasting safely with the clinician.', 'بناء نصائح الغذاء حول وجبات العائلة والأطباق المشتركة، وتنظيم الصيام بأمان مع الطبيب.'),
+    sources: ['S4', 'S5', 'S14'],
+    service: 'primary_care',
+  },
+  activity: {
+    id: 'activity',
+    label: L('Physical activity', 'النشاط البدني'),
+    why: L('Physical inactivity is a modifiable risk factor. Wearable step counts give context, not a diagnosis.', 'قلة النشاط البدني عامل خطر قابل للتعديل. تعطي عدادات الخطى سياقًا لا تشخيصًا.'),
+    action: L('Agree a walking or strength goal the person can keep to.', 'الاتفاق على هدف مشي أو تقوية يمكن الالتزام به.'),
+    localNote: L('In the hot months, plan indoor walking in malls or community centres, with women-only options where preferred.', 'في الأشهر الحارة، يُخطط للمشي داخل المراكز التجارية أو المجتمعية، مع خيارات للنساء فقط عند الرغبة.'),
+    sources: ['S4', 'S5', 'S6', 'S7'],
+    service: null,
+  },
+  social: {
+    id: 'social',
+    label: L('Social connection and lifestyle', 'التواصل الاجتماعي ونمط الحياة'),
+    why: L('Social isolation, smoking and heavy alcohol use are modifiable risk factors.', 'العزلة الاجتماعية والتدخين والإفراط في الكحول عوامل خطر قابلة للتعديل.'),
+    action: L('Talk through social contact and tobacco use, including shisha and dokha, and offer support to quit.', 'مناقشة التواصل الاجتماعي واستخدام التبغ، بما فيه الشيشة والدوخة، وعرض الدعم للإقلاع.'),
+    localNote: L('Family gatherings and community majlis may be natural routes to social contact.', 'قد تكون التجمعات العائلية والمجالس المجتمعية طرقًا طبيعية للتواصل الاجتماعي.'),
+    sources: ['S4', 'S5'],
+    service: null,
+  },
+  function: {
+    id: 'function',
+    label: L('Daily function with the care partner', 'الأداء اليومي مع مرافق الرعاية'),
+    why: L('Reported change in familiar tasks matters more than any single number in this tool.', 'التغيّر المبلّغ عنه في المهام المألوفة أهم من أي رقم منفرد في هذه الأداة.'),
+    action: L('Ask for onset, examples and impact from the person and, with their permission, someone who knows them well.', 'السؤال عن البداية والأمثلة والأثر من الشخص، وبإذنه ممن يعرفه جيدًا.'),
+    localNote: L('Families often share care. Agree with the person who may join the conversation.', 'غالبًا ما تتشارك العائلات الرعاية. يُتفق مع الشخص على من يمكنه حضور الحديث.'),
+    sources: ['S14', 'S5'],
+    service: 'geriatrics',
+  },
+  family_genetics: {
+    id: 'family_genetics',
+    label: L('Family history and genetic information', 'التاريخ العائلي والمعلومات الوراثية'),
+    why: L('Family history and APOE status add context but cannot predict one person\'s future. Neither changes the route here.', 'يضيف التاريخ العائلي وحالة APOE سياقًا لكنهما لا يتنبآن بمستقبل الفرد. ولا يغيّر أي منهما المسار هنا.'),
+    action: L('Clarify who was affected and at what age. Offer genetic counselling before any testing or result discussion.', 'توضيح من أصيب وفي أي عمر. تقديم الاستشارة الوراثية قبل أي فحص أو مناقشة نتيجة.'),
+    localNote: L('Results can affect relatives and marriage decisions, so counselling needs privacy and cultural care.', 'قد تؤثر النتائج في الأقارب وقرارات الزواج، لذا تحتاج الاستشارة إلى خصوصية وعناية ثقافية.'),
+    sources: ['S12', 'S4'],
+    service: 'genetic_counselling',
+  },
+};

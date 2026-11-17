@@ -1,0 +1,12 @@
+node_modules
+dist
+backend/.venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+*.db
+.env
+.env.local
+.netlify
+.claude
+fhir-examples
